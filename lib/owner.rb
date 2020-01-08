@@ -1,3 +1,4 @@
+require 'pry'
 class Owner
   # code goes here
   attr_reader :name, :species
@@ -36,6 +37,7 @@ class Owner
     soldcat = Cat.all.select{|c| c.name == cat}[0]
     soldcat.owner = self
     cats
+    binding.pry
   end
   
    def buy_dog(dog)
