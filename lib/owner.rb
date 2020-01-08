@@ -33,13 +33,13 @@ class Owner
   end
   
   def buy_cat(cat)
-    soldcat = Cat.all.select{|c| c.name == cat}[0]
+    soldcat = Cat.all.select{|c| c.name == cat}
     soldcat.owner = self
     cats
   end
   
    def buy_dog(dog)
-    solddog = Dog.all.select{|d| d.name == dog}[0]
+    solddog = Dog.all.select{|d| d.name == dog}
     solddog.owner = self
     dogs
   end
