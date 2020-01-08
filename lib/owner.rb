@@ -58,6 +58,7 @@ class Owner
       dog.mood = "nervous"
       dog.owner = null
     end
+  end
 
     
   
