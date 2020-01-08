@@ -39,7 +39,7 @@ class Owner
   end
   
    def buy_dog(dog)
-    solddog = Dog.all.select{|d| d.name == dog}
+    solddog = Dog.all.select{|d| d.name == dog}[0]
     solddog.owner = self
     dogs
   end
