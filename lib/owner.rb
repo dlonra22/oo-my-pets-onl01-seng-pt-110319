@@ -50,7 +50,15 @@ class Owner
   end
   
   def sell_pets
-    self.cats.eacch {
+    self.cats.each do |cat| 
+      cat.mood = "nervous"
+      cat.owner = ""
+    end
+    self.dogs.each do |dog| 
+      dog.mood = "nervous"
+      dog.owner
+
+    
   
     
 end
