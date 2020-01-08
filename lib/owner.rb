@@ -33,8 +33,8 @@ class Owner
     Dog.all.select {|d| d.owner == self}
   end
   
-  def buy_cat(cat)
-    soldcat = Cat.all.select{|c| c.name == cat}[0]
+  def buy_cat(name)
+   cat = 
     soldcat.owner = self
     cats
     binding.pry
