@@ -33,7 +33,7 @@ class Owner
   end
   
   def buy_cat(cat)
-    soldcat = Cat.all.select{|c| c.name == cat}
+    soldcat = Cat.all.select{|c| c.name == cat}[0]
     soldcat.owner = self
     cats
   end
