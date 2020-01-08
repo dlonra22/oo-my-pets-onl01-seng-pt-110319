@@ -23,5 +23,10 @@ class Owner
   def say_species
    "I am a #{@species}."
   end
+  
+  def cats
+    Cats.all.select {|c| c.owner = self}
+  end
+  
     
 end
